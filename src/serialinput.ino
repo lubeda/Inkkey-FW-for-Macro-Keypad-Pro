@@ -223,14 +223,15 @@ void processText() {
         TextColor = str2rgb565(&serialBuffer[4]);     
         display.fillScreen(BackgroundColor); 
         display.setTextColor(TextColor,TextBackground);
+        handleLightSensor();
       break;
     case 7:
         display.setTextSize(4);
-        display.setCursor( 34, 235-27);
+        display.setCursor( 30, 235-27);
         offset = 4;
       break;
     default:
-        display.setCursor( 14, slot*27);
+        display.setCursor( 10, slot*27);
         offset = 2;
       break;
     }

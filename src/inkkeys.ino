@@ -89,6 +89,8 @@ void setup() {
   
   defaultKeyLed();
   defaultDisplay();
+
+  handleLightSensor();
 }
 
 int handleLightSensor() {
@@ -101,7 +103,6 @@ void loop() {
   checkKeysAndReportChanges();
   checkRotaryEncoderAndReportChanges();
   handleSerialInput();
-  handleLightSensor();
 }
 
 //Called when state of key has changed. Checks debounce time
