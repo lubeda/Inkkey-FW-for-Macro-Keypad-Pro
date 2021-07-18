@@ -1,5 +1,5 @@
 # Inkkey-FW-for-Macro-Keypad-Pro-
-a modified Firmware for the Macro Keypad Pro to use with inkkeys like PC-Software
+a modified Firmware for the Macro Keypad Pro to use with inkkeys (https://there.oughta.be/a/macro-keyboard)like PC-Software
 
 I'm lazy so i bought the very nice hardware from https://www.tindie.com/products/phoenixcnc/6-key-macro-keypad-with-rotary-encoder-and-display/ the build in software i also nice but not as it should be.
 
