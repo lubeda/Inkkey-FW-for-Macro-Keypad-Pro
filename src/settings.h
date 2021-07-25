@@ -24,8 +24,8 @@ const byte PIN_LED = A1; // A1
 const byte N_LED = 15; //Number of LEDs
 
 //Rotary encoder
-const byte PIN_ROTA = 10;
-const byte PIN_ROTB = 11;
+const byte PIN_ROTA = 11;
+const byte PIN_ROTB = 10;
 const byte PIN_SW7 = 18;
 
 const byte ROT_FACTOR = 4;         //Smallest reported step, typically one "click" on the encoder 

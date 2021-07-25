@@ -97,7 +97,7 @@ void executeEvents(Event events[]) {
 }
 
 void defaultAssignment() {
-  // 0 - 5 Buttons 6 jog-click 7 wheel
+  // 0 - 5 Buttons 6 jog-click 7 wheel in Array      
   //Initialize assignments array with defaults
   for (byte key = 0; key < N_EVENTS; key++) {
     for (byte event = 0; event < N_EVENTS; event++) {
