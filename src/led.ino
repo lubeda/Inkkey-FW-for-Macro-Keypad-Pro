@@ -50,20 +50,14 @@ void ledGreeting(int steps) {
     for (int j = 0; j < N_LED; j++) {
       leds.setPixelColor(j, dimmedColor(hue2rgb(i/2 + j*256/N_LED), brightness));
     }
-    leds.show();
-  }
-  leds.clear();
-  leds.show();
-}
-
-void keyledGreeting(int steps) {
-  for (int i = 0; i < steps; i++) {
-    byte brightness = constrain(steps/2 - abs(i-steps/2), 0, 255);
     for (int j = 0; j < 6; j++) {
       keyleds.setPixelColor(j, dimmedColor(hue2rgb(i/2 + j*256/N_LED), brightness));
     }
     keyleds.show();
+    leds.show();
   }
+  leds.clear();
+  leds.show();
   keyleds.clear();
   keyleds.show();
 }

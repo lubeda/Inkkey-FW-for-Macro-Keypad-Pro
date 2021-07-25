@@ -257,10 +257,10 @@ void processAssignCommand() {
   }
   
   byte key, pr;
-  if (serialBuffer[2] >= '1' && serialBuffer[2] <= '9')
+  if (serialBuffer[2] >= '1' && serialBuffer[2] <= '7')
     key = serialBuffer[2] - '1';
   else if (serialBuffer[2] == 'R')
-    key = 9;
+    key = 7;
   else {
     printErrorWithIndex("Bad format", 2);
     return;

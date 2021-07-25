@@ -85,8 +85,7 @@ void setup() {
   Serial.println("= Inkkeys =");
   
   ledGreeting(600);
-  keyledGreeting(800);
-  
+    
   defaultKeyLed();
   defaultDisplay();
 
