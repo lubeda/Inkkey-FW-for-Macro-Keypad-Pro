@@ -227,11 +227,14 @@ void processText() {
       break;
     case 7:
         display.setTextSize(4);
+        display.fillRect(0, 235-27, 239, 27, TextBackground);
         display.setCursor( 30, 235-27);
         offset = 4;
       break;
     default:
+        display.fillRect(0, slot*27, 239, 27, TextBackground);
         display.setCursor( 10, slot*27);
+        
         offset = 2;
       break;
     }
