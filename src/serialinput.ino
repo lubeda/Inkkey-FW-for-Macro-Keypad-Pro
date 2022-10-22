@@ -240,7 +240,8 @@ void processText() {
     }
     if (slot > 0 ) {
       display.setTextSize(3);
-      for (i=offset ; i < serialBufferCount; i++)
+      unsigned short minlen = min(14,serialBufferCount);
+      for (i=offset ; i < minlen; i++)
       {
         display.print(serialBuffer[i]);
       }
