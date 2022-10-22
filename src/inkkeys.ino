@@ -56,14 +56,14 @@ void setup() {
   //  after a power cycle which is pretty annoying.
   
   Serial.begin(115200);
-
+  Serial.println("Inkkeys");
+  Serial.println("Booting!");
   initDisplay();
   initLEDs();
-
   defaultAssignment();
   
   //Greeting on serial
-  Serial.println("Inkkeys");
+  
   
   //Set pin modes for keys
   for (int i = 0; i < nSW; i++) {
